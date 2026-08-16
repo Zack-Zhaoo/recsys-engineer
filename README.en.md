@@ -4,15 +4,13 @@
 
 [![validate](https://github.com/Zack-Zhaoo/recsys-engineer/actions/workflows/validate.yml/badge.svg)](https://github.com/Zack-Zhaoo/recsys-engineer/actions/workflows/validate.yml)
 
-Ask an AI about recsys and the answer reads fine, but you can't tell what kind of claim you're getting.
+When you use an AI to answer questions about recommender systems, the recurring difficulty is judging how much a given conclusion can be trusted. The same figure might come from a paper's experiment, from a company blog describing its own work, or simply from the model's guess. Without a source, an answer like that cannot carry a technical decision.
 
-It says "this method gets 3% lift." That could be a number from a paper, a company blog talking about itself, or something it made up on the spot. It says "the industry generally does this," and you still don't know which company or which year. There's no source to check. Good enough to repeat in a meeting, not good enough to plan around.
+This Skill puts an evidence grade on every conclusion: stable consensus, paper report, company report, synthesized judgment, author opinion, or open hypothesis. Anything touching industrial gains is always written as "the paper/company reports," never as verified fact.
 
-This is an Agent Skill for recommender systems that puts an evidence grade on every conclusion: stable consensus, paper report, company report, synthesized judgment, author opinion, open hypothesis. Anything touching industrial gains is phrased as "the paper/company reports," never as verified fact.
+The 74 papers and 43 company engineering articles it collects all carry links. Company articles are further graded as first-party official, team-authored, or secondary commentary, and secondary commentary serves only as a reading aid. It cannot on its own support a claim about a first, a deployment, or a reported gain.
 
-All 74 papers and 43 company engineering articles carry links. Company articles are graded three ways: first-party official, team-authored, secondary commentary. Blog explainers serve as reading aids and can't be the sole support for a claim about deployment, gains, or being first.
-
-Knowledge is fixed at 2026-08-01, with no web retrieval, and it owns that. Asked about recent work, it says so instead of presenting anything later as known.
+Knowledge is fixed at 2026-08-01, with no web retrieval. Asked about recent work, it states that boundary first rather than treating anything after the cutoff as known.
 
 Everything inside is written in Chinese and it answers in Chinese. This page is translated so people can find it.
 
