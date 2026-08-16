@@ -4,6 +4,10 @@
 
 [![validate](https://github.com/Zack-Zhaoo/recsys-engineer/actions/workflows/validate.yml/badge.svg)](https://github.com/Zack-Zhaoo/recsys-engineer/actions/workflows/validate.yml)
 
+I built this recommender-systems skill together with AI, notebook feature and all, distilling a little of what I know. It covers a foundational learning path for recommender systems plus some more advanced material, and it carries my own views on a number of questions. I believe both newcomers and working algorithm engineers will find something useful in it. This is the first version. You're welcome to follow it, download it, use it, and send me your feedback. I'll keep iterating on it for the long haul.
+
+---
+
 When you use an AI to answer questions about recommender systems, the recurring difficulty is judging how much a given conclusion can be trusted. The same figure might come from a paper's experiment, from a company blog describing its own work, or simply from the model's guess. Without a source, an answer like that cannot carry a technical decision.
 
 This Skill puts an evidence grade on every conclusion: stable consensus, paper report, company report, synthesized judgment, author opinion, or open hypothesis. Anything touching industrial gains is always written as "the paper/company reports," never as verified fact.
@@ -94,9 +98,7 @@ Content is [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), `scripts/`
 
 Papers and company articles cited under `knowledge/` are not part of this project. Only links, metadata, and a one-line summary are stored, and copyright remains with their authors.
 
-## A note from the author
-
-I built this recommender-systems skill together with AI, notebook feature and all, distilling a little of what I know. It covers a foundational learning path for recommender systems plus some more advanced material, and it carries my own views on a number of questions. I believe both newcomers and working algorithm engineers will find something useful in it. This is the first version. You're welcome to follow it, download it, use it, and send me your feedback. I'll keep iterating on it for the long haul.
+## Author
 
 Lili Dashixiong (力力大师兄), algorithm engineer at Kuaishou, JD.com, and Baidu.
 
