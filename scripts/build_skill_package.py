@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the distributable recsys-engineer.skill archive.
+"""Build the distributable recsys-engineer.zip archive.
 
 Purpose:
     Package this repository into a single archive that unpacks to a
@@ -11,7 +11,7 @@ Purpose:
 
 Usage examples:
     python3 scripts/build_skill_package.py
-    python3 scripts/build_skill_package.py --output /tmp/recsys-engineer.skill
+    python3 scripts/build_skill_package.py --output /tmp/recsys-engineer.zip
 
 Prerequisites and side effects:
     Python 3.9+. Writes only the output archive (dist/ by default, which is
@@ -31,7 +31,7 @@ import zipfile
 
 SKILL_ROOT = Path(__file__).resolve().parents[1]
 ARCHIVE_PREFIX = "recsys-engineer"
-DEFAULT_OUTPUT = SKILL_ROOT / "dist" / "recsys-engineer.skill"
+DEFAULT_OUTPUT = SKILL_ROOT / "dist" / "recsys-engineer.zip"
 EXCLUDED_DIRS = {"__pycache__", "dist"}
 EXCLUDED_SUFFIXES = {".pyc"}
 
@@ -90,7 +90,7 @@ def build_parser() -> argparse.ArgumentParser:
         "--output",
         type=Path,
         default=DEFAULT_OUTPUT,
-        help="Path of the archive to write (default: dist/recsys-engineer.skill)",
+        help="Path of the archive to write (default: dist/recsys-engineer.zip)",
     )
     return parser
 

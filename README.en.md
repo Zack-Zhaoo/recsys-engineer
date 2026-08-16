@@ -20,7 +20,7 @@ Everything inside is written in Chinese and it answers in Chinese. This page is 
 
 ## Install
 
-This is a standard Agent Skill directory and is not tied to one client. The commands below use Claude Code; other clients that support Skills load the same directory, or the packaged `.skill` file, their own way.
+This is a standard Agent Skill directory and is not tied to one client. The commands below use Claude Code; other clients that support Skills load the same directory, or the packaged `.zip`, their own way.
 
 ```bash
 git clone https://github.com/Zack-Zhaoo/recsys-engineer.git ~/.claude/skills/recsys-engineer

@@ -20,7 +20,7 @@
 
 ## 安装
 
-这是标准的 Agent Skill 目录，不绑定某一个客户端。下面以 Claude Code 为例，其他支持 Skill 的客户端按各自的方式加载同一个目录，或加载打包好的 `.skill` 文件。
+这是标准的 Agent Skill 目录，不绑定某一个客户端。下面以 Claude Code 为例，其他支持 Skill 的客户端按各自的方式加载同一个目录，或加载打包好的 `.zip` 包。
 
 ```bash
 git clone https://github.com/Zack-Zhaoo/recsys-engineer.git ~/.claude/skills/recsys-engineer
