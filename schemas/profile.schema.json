@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "profile.schema.json",
+  "title": "Recommendation learner profile",
+  "type": "object",
+  "required": ["schema_version", "role", "experience_years", "domains", "goals", "interests", "notes", "updated_at"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "role": {"type": ["string", "null"]},
+    "experience_years": {"type": ["number", "null"], "minimum": 0},
+    "domains": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "goals": {"type": "array", "items": {"type": "string"}},
+    "interests": {
+      "type": "object",
+      "required": ["funnel", "paradigms", "topics"],
+      "properties": {
+        "funnel": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "paradigms": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "topics": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      },
+      "additionalProperties": false
+    },
+    "notes": {"type": "array", "items": {"type": "string"}},
+    "updated_at": {"type": ["string", "null"], "format": "date-time"}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "scale": ["unassessed", "aware", "explain", "apply", "design", "research"],
+  "modules": {
+    "core.foundations": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "core.industry-positioning": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "core.product-thinking": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "core.data-analysis": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "core.system-thinking": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "funnel.end-to-end": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "funnel.retrieval": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "funnel.pre-ranking": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "funnel.ranking": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "funnel.reranking-and-policy": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "funnel.feedback-loop": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "paradigms.large-ranking-models": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "paradigms.generative-recommendation": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "paradigms.llm-in-recommendation": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "paradigms.agentic-recommendation": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "paradigms.multimodal-recommendation": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "engineering.data-and-sampling": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "engineering.features-and-embeddings": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "engineering.training-and-serving": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "engineering.evaluation-and-experimentation": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "engineering.reliability-and-governance": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "engineering.lifecycle-operations": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "research.frontier-map": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "research.experiment-design": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "research.frontier-judgment": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "industry.production-practice": {"level": "unassessed", "evidence": [], "updated_at": null},
+    "industry.evidence-reading": {"level": "unassessed", "evidence": [], "updated_at": null}
+  }
+}

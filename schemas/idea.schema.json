@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "idea.schema.json",
+  "title": "Recommendation idea metadata",
+  "type": "object",
+  "required": ["id", "title", "status", "novelty", "origin", "funnel", "paradigms", "topics", "scenario_fit", "implementation_cost", "action_track", "review_after", "related_ideas", "card", "created_at", "updated_at"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^IDEA-[0-9]{8}-[a-f0-9]{6}$"},
+    "title": {"type": "string", "minLength": 1},
+    "status": {"enum": ["captured", "incubating", "clustered", "developing", "experiment-ready", "experimenting", "validated", "adopted", "rejected", "archived"]},
+    "novelty": {"enum": ["unverified", "partially-searched", "supported", "overlapping", "not-novel"]},
+    "origin": {"enum": ["user", "assistant", "co-developed", "external"]},
+    "funnel": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "paradigms": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "topics": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "scenario_fit": {"enum": ["unknown", "low", "medium", "high"]},
+    "implementation_cost": {"enum": ["unknown", "low", "medium", "high"]},
+    "action_track": {"enum": ["undecided", "incubation-todo", "long-term-idea"]},
+    "review_after": {"type": ["string", "null"], "format": "date"},
+    "related_ideas": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^IDEA-[0-9]{8}-[a-f0-9]{6}$"},
+      "uniqueItems": true
+    },
+    "card": {"type": "string", "pattern": "^workspace/ideas/cards/.+\\.md$"},
+    "created_at": {"type": "string", "format": "date-time"},
+    "updated_at": {"type": "string", "format": "date-time"}
+  },
+  "additionalProperties": false
+}

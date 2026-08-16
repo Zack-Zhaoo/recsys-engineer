@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mastery.schema.json",
+  "title": "Recommendation mastery map",
+  "type": "object",
+  "required": ["schema_version", "scale", "modules"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "scale": {
+      "const": ["unassessed", "aware", "explain", "apply", "design", "research"]
+    },
+    "modules": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["level", "evidence", "updated_at"],
+        "properties": {
+          "level": {"enum": ["unassessed", "aware", "explain", "apply", "design", "research"]},
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["at", "source", "detail"],
+              "properties": {
+                "at": {"type": "string", "format": "date-time"},
+                "source": {"enum": ["self-reported", "observed", "user-confirmed", "assistant", "co-developed", "external"]},
+                "detail": {"type": "string", "minLength": 1}
+              },
+              "additionalProperties": false
+            }
+          },
+          "updated_at": {"type": ["string", "null"], "format": "date-time"}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
