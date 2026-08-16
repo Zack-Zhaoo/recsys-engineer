@@ -2,6 +2,8 @@
 
 [中文](README.md)
 
+[![validate](https://github.com/Zack-Zhaoo/recsys-engineer/actions/workflows/validate.yml/badge.svg)](https://github.com/Zack-Zhaoo/recsys-engineer/actions/workflows/validate.yml)
+
 Ask an AI about recsys and the answer reads fine, but you can't tell what kind of claim you're getting.
 
 It says "this method gets 3% lift." That could be a number from a paper, a company blog talking about itself, or something it made up on the spot. It says "the industry generally does this," and you still don't know which company or which year. There's no source to check. Good enough to repeat in a meeting, not good enough to plan around.

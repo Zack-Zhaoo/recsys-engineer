@@ -1,0 +1,27 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # 3.9 是 README 声明的最低版本，一并跑一个新版本防止语法退化。
+        python-version: ["3.9", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: 校验 Skill 完整性
+        run: python3 scripts/validate_skill.py
+
+      - name: 确认能打出包
+        run: python3 scripts/build_skill_package.py

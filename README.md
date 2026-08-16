@@ -2,6 +2,8 @@
 
 [English](README.en.md)
 
+[![validate](https://github.com/Zack-Zhaoo/recsys-engineer/actions/workflows/validate.yml/badge.svg)](https://github.com/Zack-Zhaoo/recsys-engineer/actions/workflows/validate.yml)
+
 问 AI 推荐系统的问题,答案读起来都挺顺,但你分不清它在说什么级别的话。
 
 它说"某某方法能提升 3%",这可能是论文里的数字,可能是公司博客的自述,也可能是它顺手编的。它说"业界普遍这么做",又是哪家公司,哪一年。想查出处也查不到。这种回答拿去开会讲讲可以,拿去定方案心里没底。
