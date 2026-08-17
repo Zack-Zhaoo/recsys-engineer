@@ -63,7 +63,7 @@ python3 ~/.claude/skills/recsys-engineer/scripts/validate_skill.py
 
 ## 覆盖范围
 
-召回、预排、精排、重排与策略、反馈闭环、数据与采样、特征与 Embedding、训练与 Serving、评估与实验、可靠性与治理。前沿五条线是 Large Ranking Model、生成式推荐、LLM 推荐、Agentic 推荐和多模态。
+召回、粗排、精排、重排与策略、反馈闭环、数据与采样、特征与 Embedding、训练与 Serving、评估与实验、可靠性与治理。前沿五条线是 Large Ranking Model、生成式推荐、LLM 推荐、Agentic 推荐和多模态。
 
 论文从 2009 排到 2026，分经典原型、工业变体、前沿工作三层。中间那层最容易被漏掉。PLE、PEPNet、SIM、TWIN 这些实际在用的东西，论文清单里经常没有。
 

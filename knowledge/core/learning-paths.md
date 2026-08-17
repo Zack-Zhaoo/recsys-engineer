@@ -23,7 +23,7 @@
 | 召回 | DSSM、MIND、TDM [SRC-DSSM-2013] [SRC-MIND-2019] [SRC-TDM-2018] | 双塔的表达力边界，以及检索为何被内积形式限制 |
 | 召回训练 | Sampling-Bias-Corrected [SRC-SAMPLING-BIAS-2019] | 采样分布如何改变分数含义，校正项从哪来 |
 | 索引与 Serving | HNSW、Faiss [SRC-HNSW-2016] [SRC-FAISS-2017] | 近似检索的质量—内存—吞吐三角 |
-| 预排 | COLD [SRC-COLD-2020] | 把算力预算写进优化目标，而不是先建模再砍成本 |
+| 粗排 | COLD [SRC-COLD-2020] | 把算力预算写进优化目标，而不是先建模再砍成本 |
 | 排序 | Wide & Deep、DIN、DIEN、DCN V2 [SRC-WIDE-DEEP-2016] [SRC-DIN-2018] [SRC-DIEN-2019] [SRC-DCNV2-2021] | 记忆与泛化的分工，目标感知的兴趣激活 |
 | 序列建模 | SASRec、BERT4Rec [SRC-SASREC-2018] [SRC-BERT4REC-2019] | 序列推荐的两种训练范式及其评测争议 |
 | 多目标 | MMoE、ESMM [SRC-MMOE-2018] [SRC-ESMM-2018] | 任务冲突的结构化处理，以及后置转化的样本空间问题 |
@@ -51,7 +51,7 @@
 | 多兴趣召回 | MIND → ComiRec [SRC-COMIREC-2020] | 兴趣数量与多样性权衡变成可控参数 |
 | 双塔落地 | DSSM → Facebook EBR [SRC-FB-EBR-2020] | 难负例、样本分布、索引调优与下游耦合的完整工程账 |
 | 联合索引 | TDM → Deep Retrieval [SRC-DEEP-RETRIEVAL-2020] | 用可学习路径结构替代树，降低索引重建耦合 |
-| 预排蒸馏 | 通用蒸馏 → Rocket Launching → COLD [SRC-ROCKET-2018] | 轻网络与教师联合训练、共享底层参数 |
+| 粗排蒸馏 | 通用蒸馏 → Rocket Launching → COLD [SRC-ROCKET-2018] | 轻网络与教师联合训练、共享底层参数 |
 | 位置偏差 | 直接用曝光标签 → PAL [SRC-PAL-2019] | 训练时分离位置与相关性，线上只用相关性打分 |
 
 关于快手 PPNet：它在工业交流中被广泛提及，但公开可引用的完整表述以 PEPNet 为准，思想源头是语音自适应的 LHUC。用博客或口头介绍支撑“某公司首次/收益多少”的强声明不成立，见 [证据规则](../sources/evidence-policy.md)。

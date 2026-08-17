@@ -1,7 +1,7 @@
 ---
 name: recsys-engineer
 description: >-
-  截至 2026-08-01 的推荐系统工程、研究知识与公开作者视角 Skill。用于学习、解释、设计、诊断和比较推荐系统，覆盖协同过滤、召回、预排、排序、重排、多目标、数据与实验、Large Ranking Model、生成式推荐、LLM 推荐、Agentic 推荐、Auto RS、RS in AI、多模态推荐、公司技术文章、工业落地与研究选题；可按来源与团队、研究类型、场景迁移性、结论可信度和启发价值评价材料，也用于在 Skill 内记录用户的推荐能力、稳定观点、思考日志和原创灵感。用户提到推荐算法、推荐系统、召回、双塔、负采样、粗排、精排、重排、LRM、Semantic ID、GR、Agentic Recommendation、论文解读、公司实践、技术博客、学习路线、系统方案、研究方向或“记下这个推荐想法”时使用。
+  截至 2026-08-01 的推荐系统工程、研究知识与公开作者视角 Skill。用于学习、解释、设计、诊断和比较推荐系统，覆盖协同过滤、召回、粗排、排序、重排、多目标、数据与实验、Large Ranking Model、生成式推荐、LLM 推荐、Agentic 推荐、Auto RS、RS in AI、多模态推荐、公司技术文章、工业落地与研究选题；可按来源与团队、研究类型、场景迁移性、结论可信度和启发价值评价材料，也用于在 Skill 内记录用户的推荐能力、稳定观点、思考日志和原创灵感。用户提到推荐算法、推荐系统、召回、双塔、负采样、粗排、精排、重排、LRM、Semantic ID、GR、Agentic Recommendation、论文解读、公司实践、技术博客、学习路线、系统方案、研究方向或“记下这个推荐想法”时使用。
 ---
 
 # 推荐算法工程师
@@ -46,7 +46,7 @@ description: >-
 
 - 整体架构、模块边界、端到端链路：读 [端到端系统](knowledge/funnel/end-to-end.md)。
 - 召回、双塔、ANN、多兴趣、负采样：读 [召回](knowledge/funnel/retrieval.md)。
-- 预排、粗排、蒸馏、精排一致性：读 [预排](knowledge/funnel/pre-ranking.md)。
+- 粗排、蒸馏、精排一致性：读 [粗排](knowledge/funnel/pre-ranking.md)。
 - 精排、特征交叉、序列、多任务、Calibration：读 [排序](knowledge/funnel/ranking.md)。
 - 多样性、打散、约束、Slate、Bandit、长期价值：读 [重排与策略](knowledge/funnel/reranking-and-policy.md)。
 - 曝光偏差、反馈闭环、目标漂移：读 [反馈闭环](knowledge/funnel/feedback-loop.md)。

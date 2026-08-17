@@ -18,7 +18,7 @@
 | 问题 | 优先材料 |
 |---|---|
 | 多阶段漏斗与召回 | Meta Explore、YouTube DNN、喜马广告漏斗/召回 |
-| 预排/粗排 | 美团搜索粗排 |
+| 粗排 | 美团搜索粗排 |
 | 多任务与多场景 | YouTube multitask、HiNet、TokenFormer |
 | LRM 与 Scaling | RankMixer/TokenMixer 解读、阿里 EST/SSR、美团 MTGR |
 | 生成式推荐/搜索/广告 | MTGR、腾讯 GPR、快手 OneSearch/GR4AD/RaG、喜马 GR |
