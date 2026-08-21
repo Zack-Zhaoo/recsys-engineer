@@ -22,7 +22,7 @@
 - LRM：是否证明 Scaling，而非只证明更大；有无等算力曲线。
 - GR / One Model：tokenizer、合法率、解码预算、传统级联 Baseline、局部调整、灰度回滚和产品响应速度。
 - LLM：是否泄漏外部知识，候选规模是否现实，成本是否报告。
-- Agentic：先做 [约束穿透检查](../knowledge/paradigms/agentic-recommendation.md)，确认收益是否只在绕开工业约束的场景下成立；再把基础模型能力红利与 Agent 设计分开，检查组件消融、工具错误、记忆正确性和真人评估。
+- Agentic：先读 [Agentic 推荐](../knowledge/paradigms/agentic-recommendation.md)，按其中三节依次核对。约束穿透检查看问题难度是否被绕开；三个位置看观察面、消费面与出现时机是否成立；实验设置检查项看数据、基线与反馈回路是否支撑结论。随后把基础模型能力红利与 Agent 设计分开，检查组件消融、工具错误、记忆正确性和真人评估。
 - Auto RS：是否真的接入数据、实验和决策闭环，还是只生成建议或调超参。
 
 ## 表达与外部验证
