@@ -44,7 +44,7 @@
 | 特征交叉 | Wide & Deep → DeepFM → xDeepFM → AutoInt [SRC-DEEPFM-2017] [SRC-XDEEPFM-2018] [SRC-AUTOINT-2019] | 去掉人工交叉、把交叉提到向量级、让交叉权重可学 |
 | 多任务 | MMoE → PLE [SRC-PLE-2020] | 用渐进分层的共享/专属专家正面处理跷跷板 |
 | 转化链路 | ESMM → AITM [SRC-AITM-2021] | 多步转化之间是有序依赖，不是并列的独立头 |
-| 多场景 | 单场景排序 → STAR [SRC-STAR-2021] | 同一目标不同分布：共享中心参数加场景专属参数 |
+| 多场景 | 单场景排序 → STAR → MTFM [SRC-STAR-2021] [SRC-MTFM-2026] | 从共享中心参数加场景专属参数，到放弃输入对齐、把多域数据变成异构 token |
 | 参数个性化 | LHUC → POSO → PEPNet [SRC-LHUC-2016] [SRC-POSO-2021] [SRC-PEPNET-2023] | 主干不变、用先验生成乘性系数，延迟可控地吃下人群差异 |
 | 门控家族旁支 | MaskNet [SRC-MASKNET-2021] | 实例引导的乘法 mask，与上一行同源不同用法 |
 | 长序列 | DIN/DIEN → MIMN → SIM → TWIN [SRC-MIMN-2019] [SRC-SIM-2020] [SRC-TWIN-2023] | 压缩成可增量更新的状态 → 检索相关子序列 → 消除检索与精排的度量不一致 |

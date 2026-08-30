@@ -12,7 +12,7 @@ When you use an AI to answer questions about recommender systems, the recurring 
 
 This Skill puts an evidence grade on every conclusion: stable consensus, paper report, company report, synthesized judgment, author opinion, or open hypothesis. Anything touching industrial gains is always written as "the paper/company reports," never as verified fact.
 
-The 79 papers and 46 company engineering articles it collects all carry links. Company articles are further graded as first-party official, team-authored, or secondary commentary, and secondary commentary serves only as a reading aid. It cannot on its own support a claim about a first, a deployment, or a reported gain.
+The 80 papers and 46 company engineering articles it collects all carry links. Company articles are further graded as first-party official, team-authored, or secondary commentary, and secondary commentary serves only as a reading aid. It cannot on its own support a claim about a first, a deployment, or a reported gain.
 
 Knowledge is fixed at 2026-08-28, with no web retrieval. Asked about recent work, it states that boundary first rather than treating anything after the cutoff as known.
 
