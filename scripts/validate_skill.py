@@ -3,7 +3,7 @@
 
 Purpose:
     Provide a deterministic public-release gate beyond the generic AgentSkill
-    validator. It checks the fixed 2026-08-01 snapshot and ensures that the
+    validator. It checks the fixed 2026-08-28 snapshot and ensures that the
     distributable workspace contains no fabricated personal data.
 
 Usage examples:
@@ -30,7 +30,7 @@ import sys
 from typing import Any
 
 
-SNAPSHOT_DATE = "2026-08-01"
+SNAPSHOT_DATE = "2026-08-28"
 REQUIRED_FILES = [
     "SKILL.md",
     "LICENSE.md",
@@ -219,8 +219,21 @@ def validate_sources(root: Path, errors: list[str]) -> None:
             if not isinstance(entry.get("title"), str) or not entry["title"].strip():
                 errors.append(f"Source {source_id} must have a title")
             if catalog_type == "paper":
-                if not isinstance(entry.get("year"), int) or entry["year"] > 2026:
+                snapshot_year = int(SNAPSHOT_DATE[:4])
+                year = entry.get("year")
+                if not isinstance(year, int) or year > snapshot_year:
                     errors.append(f"Source {source_id} is outside the fixed snapshot year")
+                    continue
+                # Entries from the snapshot year are the ones that can silently slip
+                # past the cut-off, so they must carry a day-level date.
+                published = entry.get("published")
+                if year == snapshot_year and not isinstance(published, str):
+                    errors.append(f"Source {source_id} is in the snapshot year and needs a published date")
+                elif isinstance(published, str):
+                    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", published):
+                        errors.append(f"Source {source_id} has an invalid published date")
+                    elif published > SNAPSHOT_DATE:
+                        errors.append(f"Source {source_id} is after the snapshot date")
                 continue
             for field in ("company_group", "publisher", "kind"):
                 if not isinstance(entry.get(field), str) or not entry[field].strip():

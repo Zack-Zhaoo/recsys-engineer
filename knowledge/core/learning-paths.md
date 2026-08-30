@@ -27,7 +27,7 @@
 | 排序 | Wide & Deep、DIN、DIEN、DCN V2 [SRC-WIDE-DEEP-2016] [SRC-DIN-2018] [SRC-DIEN-2019] [SRC-DCNV2-2021] | 记忆与泛化的分工，目标感知的兴趣激活 |
 | 序列建模 | SASRec、BERT4Rec [SRC-SASREC-2018] [SRC-BERT4REC-2019] | 序列推荐的两种训练范式及其评测争议 |
 | 多目标 | MMoE、ESMM [SRC-MMOE-2018] [SRC-ESMM-2018] | 任务冲突的结构化处理，以及后置转化的样本空间问题 |
-| 重排与策略 | DPP、LinUCB [SRC-DPP-2018] [SRC-LINUCB-2010] | 多样性如何变成可解的目标，探索如何被形式化 |
+| 重排与策略 | MMR → DPP、LinUCB [SRC-MMR-1998] [SRC-DPP-2018] [SRC-LINUCB-2010] | 多样性如何变成可解的目标，探索如何被形式化 |
 | 偏差与闭环 | Recommendations as Treatments、Degenerate Feedback Loops [SRC-REC-TREATMENTS-2016] [SRC-DEGENERATE-LOOP-2019] | 缺失非随机的标准形式化，以及闭环退化的机制 |
 | 评估与实验 | CUPED [SRC-CUPED-2013] | 不加流量提高实验灵敏度的通用手段 |
 | 工程与表示 | DLRM、Item2Vec [SRC-DLRM-2019] [SRC-ITEM2VEC-2016] | 稀疏表主导的训练/Serving 切分，ID 表示的起点 |
@@ -53,6 +53,7 @@
 | 联合索引 | TDM → Deep Retrieval [SRC-DEEP-RETRIEVAL-2020] | 用可学习路径结构替代树，降低索引重建耦合 |
 | 粗排蒸馏 | 通用蒸馏 → Rocket Launching → COLD [SRC-ROCKET-2018] | 轻网络与教师联合训练、共享底层参数 |
 | 位置偏差 | 直接用曝光标签 → PAL [SRC-PAL-2019] | 训练时分离位置与相关性，线上只用相关性打分 |
+| 列表组织 | MMR → xQuAD → Seq2Slate → SlateQ [SRC-XQUAD-2013] [SRC-SEQ2SLATE-2018] [SRC-SLATEQ-2019] | 判据从人写到模型学，目标从即时到长期，交互与长期至今二选一 |
 
 关于快手 PPNet：它在工业交流中被广泛提及，但公开可引用的完整表述以 PEPNet 为准，思想源头是语音自适应的 LHUC。用博客或口头介绍支撑“某公司首次/收益多少”的强声明不成立，见 [证据规则](../sources/evidence-policy.md)。
 

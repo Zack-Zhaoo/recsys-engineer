@@ -43,7 +43,7 @@ SCANNED_SUFFIXES = {".md", ".yaml", ".py"}
 EXCLUDED_DIRS = {"workspace", "__pycache__", "dist"}
 BUILD_LINE_PATTERN = re.compile(r"^(- 构建日期：)(\S+)$", re.MULTILINE)
 SNAPSHOT_HEADING_PATTERN = re.compile(r"^(#{2,3} )(\d{4}-\d{2})( 快照)$", re.MULTILINE)
-FRESHNESS_GAP_DAYS = 60
+FRESHNESS_GAP_DAYS = 30
 
 
 def iso_date(value: str) -> str:
@@ -77,8 +77,14 @@ def newest_catalog_entries() -> list[tuple[str, str]]:
     """Return (catalog label, newest publication date or year) for both catalogs."""
     results = []
     papers = json.loads((SKILL_DIR / "knowledge" / "sources" / "catalog.yaml").read_text(encoding="utf-8"))
-    years = [entry.get("year") for entry in papers.get("entries", []) if isinstance(entry.get("year"), int)]
-    results.append(("论文目录", str(max(years)) if years else "无条目"))
+    entries = papers.get("entries", [])
+    # Prefer day-level dates when present; they make the gap measurable.
+    dated = [e.get("published") for e in entries if isinstance(e.get("published"), str)]
+    if dated:
+        results.append(("论文目录", max(dated)))
+    else:
+        years = [e.get("year") for e in entries if isinstance(e.get("year"), int)]
+        results.append(("论文目录", str(max(years)) if years else "无条目"))
 
     industry = json.loads(
         (SKILL_DIR / "knowledge" / "industry" / "articles" / "catalog.yaml").read_text(encoding="utf-8")

@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-08-01",
+  "snapshot_date": "2026-08-28",
   "entries": [
     {"id":"SRC-BPR-2009","year":2009,"title":"BPR: Bayesian Personalized Ranking from Implicit Feedback","kind":"paper","url":"https://arxiv.org/abs/1205.2618","topics":["collaborative-filtering","implicit-feedback","ranking-objective"]},
     {"id":"SRC-LINUCB-2010","year":2010,"title":"A Contextual-Bandit Approach to Personalized News Article Recommendation (LinUCB)","kind":"paper","url":"https://arxiv.org/abs/1003.0146","topics":["bandit","exploration","policy"]},
@@ -41,6 +41,11 @@
     {"id":"SRC-MACHINE-UNLEARNING-2021","year":2021,"title":"Machine Unlearning","kind":"paper","url":"https://arxiv.org/abs/1912.03817","topics":["privacy","deletion","governance"]},
     {"id":"SRC-PROMPT-INJECTION-2023","year":2023,"title":"Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection","kind":"paper","url":"https://arxiv.org/abs/2302.12173","topics":["llm-security","prompt-injection","agent-risk"]},
 
+    {"id":"SRC-MMR-1998","year":1998,"title":"The Use of MMR, Diversity-Based Reranking for Reordering Documents and Producing Summaries","kind":"paper","url":"https://www.cs.cmu.edu/afs/cs/Web/People/jgc/publication/MMR_DiversityBased_Reranking_SIGIR_1998.pdf","topics":["reranking","diversity","information-retrieval"]},
+    {"id":"SRC-XQUAD-2013","year":2013,"title":"Explicit Web Search Result Diversification (PhD thesis, University of Glasgow)","kind":"thesis","url":"https://theses.gla.ac.uk/4106/","topics":["diversity","intent-coverage","information-retrieval"]},
+    {"id":"SRC-SEQ2SLATE-2018","year":2018,"title":"Seq2Slate: Re-ranking and Slate Optimization with RNNs","kind":"paper","url":"https://arxiv.org/abs/1810.02019","topics":["reranking","slate-optimization","listwise"]},
+    {"id":"SRC-SLATEQ-2019","year":2019,"title":"Reinforcement Learning for Slate-based Recommender Systems: A Tractable Decomposition and Practical Methodology (SlateQ)","kind":"paper","url":"https://arxiv.org/abs/1905.12767","topics":["reinforcement-learning","slate-optimization","long-term-value","production-report"]},
+
     {"id":"SRC-DEEPFM-2017","year":2017,"title":"DeepFM: A Factorization-Machine based Neural Network for CTR Prediction","kind":"paper","url":"https://arxiv.org/abs/1703.04247","topics":["ranking","feature-interaction"]},
     {"id":"SRC-ROCKET-2018","year":2018,"title":"Rocket Launching: A Universal and Efficient Framework for Training Well-performing Light Net","kind":"paper","url":"https://arxiv.org/abs/1708.04106","topics":["distillation","pre-ranking","light-model"]},
     {"id":"SRC-XDEEPFM-2018","year":2018,"title":"xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems","kind":"paper","url":"https://arxiv.org/abs/1803.05170","topics":["ranking","feature-interaction"]},
@@ -72,11 +77,12 @@
     {"id":"SRC-RECGPT-V1-2025","year":2025,"title":"RecGPT Technical Report","kind":"paper","url":"https://arxiv.org/abs/2507.22879","topics":["agentic-recommendation","production-report"]},
     {"id":"SRC-RECBOT-2025","year":2025,"title":"Interactive Recommendation Agent with Active User Commands","kind":"paper","url":"https://arxiv.org/abs/2509.21317","topics":["agentic-recommendation","production-report"]},
     {"id":"SRC-RECGPT-V2-2025","year":2025,"title":"RecGPT-V2 Technical Report","kind":"paper","url":"https://arxiv.org/abs/2512.14503","topics":["agentic-recommendation","multi-agent","production-report"]},
-    {"id":"SRC-TRM-2026","year":2026,"title":"Farewell to Item IDs: Unlocking the Scaling Potential of Large Ranking Models via Semantic Tokens","kind":"paper","url":"https://arxiv.org/abs/2601.22694","topics":["large-ranking-model","semantic-token","production-report"]},
-    {"id":"SRC-TOKENMIXER-LARGE-2026","year":2026,"title":"TokenMixer-Large: Scaling Up Large Ranking Models in Industrial Recommenders","kind":"paper","url":"https://arxiv.org/abs/2602.06563","topics":["large-ranking-model"]},
-    {"id":"SRC-KUNLUN-2026","year":2026,"title":"Kunlun: Establishing Scaling Laws for Massive-Scale Recommendation Systems through Unified Architecture Design","kind":"paper","url":"https://arxiv.org/abs/2602.10016","topics":["large-ranking-model","scaling-law","production-report"]},
-    {"id":"SRC-SIF-2026","year":2026,"title":"Sample Is Feature: Beyond Item-Level, Toward Sample-Level Tokens for Unified Large Recommender Models","kind":"paper","url":"https://arxiv.org/abs/2604.15650","topics":["large-ranking-model","unified-recommender"]},
-    {"id":"SRC-RECGPT-V3-2026","year":2026,"title":"RecGPT-V3 Technical Report","kind":"paper","url":"https://arxiv.org/abs/2607.15591","topics":["agentic-recommendation","memory","semantic-id","production-report"]},
-    {"id":"SRC-CLAWREC-2026","year":2026,"title":"ClawRec: A Claw-Native Recommender System","kind":"paper","url":"https://arxiv.org/abs/2607.23779","topics":["agentic-recommendation","cross-platform","personal-agent","simulated-benchmark"]}
+    {"id":"SRC-TRM-2026","year":2026,"published":"2026-01-30","title":"Farewell to Item IDs: Unlocking the Scaling Potential of Large Ranking Models via Semantic Tokens","kind":"paper","url":"https://arxiv.org/abs/2601.22694","topics":["large-ranking-model","semantic-token","production-report"]},
+    {"id":"SRC-TOKENMIXER-LARGE-2026","year":2026,"published":"2026-02-06","title":"TokenMixer-Large: Scaling Up Large Ranking Models in Industrial Recommenders","kind":"paper","url":"https://arxiv.org/abs/2602.06563","topics":["large-ranking-model"]},
+    {"id":"SRC-KUNLUN-2026","year":2026,"published":"2026-02-10","title":"Kunlun: Establishing Scaling Laws for Massive-Scale Recommendation Systems through Unified Architecture Design","kind":"paper","url":"https://arxiv.org/abs/2602.10016","topics":["large-ranking-model","scaling-law","production-report"]},
+    {"id":"SRC-SIF-2026","year":2026,"published":"2026-04-17","title":"Sample Is Feature: Beyond Item-Level, Toward Sample-Level Tokens for Unified Large Recommender Models","kind":"paper","url":"https://arxiv.org/abs/2604.15650","topics":["large-ranking-model","unified-recommender"]},
+    {"id":"SRC-RECGPT-V3-2026","year":2026,"published":"2026-07-17","title":"RecGPT-V3 Technical Report","kind":"paper","url":"https://arxiv.org/abs/2607.15591","topics":["agentic-recommendation","memory","semantic-id","production-report"]},
+    {"id":"SRC-CLAWREC-2026","year":2026,"published":"2026-07-26","title":"ClawRec: A Claw-Native Recommender System","kind":"paper","url":"https://arxiv.org/abs/2607.23779","topics":["agentic-recommendation","cross-platform","personal-agent","simulated-benchmark"]},
+    {"id":"SRC-DREAM-2026","year":2026,"published":"2026-08-10","title":"DREAM Technical Report","kind":"paper","url":"https://arxiv.org/abs/2608.09408","topics":["agentic-recommendation","meta-control","intent-modeling","edge-cloud","production-report"]}
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-08-01",
+  "snapshot_date": "2026-08-28",
   "entries": [
     {"id":"SRC-IND-META-SUGGESTED-POSTS-2020","company_group":"meta","published":"2020-12-10","title":"How Instagram suggests new content","publisher":"Meta Engineering","authority":"official","kind":"engineering-article","url":"https://engineering.fb.com/2020/12/10/web/how-instagram-suggests-new-content/","topics":["retrieval","ranking","exploration"]},
     {"id":"SRC-IND-META-EXPLORE-2023","company_group":"meta","published":"2023-08-09","title":"Scaling the Instagram Explore recommendations system","publisher":"Meta Engineering","authority":"official","kind":"engineering-article","url":"https://engineering.fb.com/2023/08/09/ml-applications/scaling-instagram-explore-recommendations-system/","topics":["retrieval","pre-ranking","ranking","reranking","serving"]},
@@ -15,6 +15,9 @@
 
     {"id":"SRC-IND-MT-COARSE-2022","company_group":"meituan","published":"2022-08-11","title":"美团搜索粗排优化的探索与实践","publisher":"美团技术团队","authority":"official","kind":"engineering-article","url":"https://tech.meituan.com/2022/08/11/Coarse-Ranking-Exploration-Practice.html","topics":["pre-ranking","distillation","contrastive-learning","nas"]},
     {"id":"SRC-IND-MT-HINET-2023","company_group":"meituan","published":"2023-03-23","title":"ICDE 2023 | 多场景多任务学习在美团到店餐饮推荐的实践","publisher":"美团技术团队","authority":"official","kind":"engineering-article","url":"https://tech.meituan.com/2023/03/23/recommendation-multi-scenario:task.html","topics":["ranking","multi-scenario","multi-task"]},
+    {"id":"SRC-IND-MT-SEARCH3-2026","company_group":"meituan","published":"2026-08-20","title":"美团搜索3.0：LLM 语义表征在排序模型的探索与应用","publisher":"美团技术团队","authority":"official","kind":"engineering-article","url":"https://tech.meituan.com/2026/08/20/01-meituan-Query-3.0.html","topics":["ranking","llm","semantic-representation","search"]},
+    {"id":"SRC-IND-MT-KDD26-2026","company_group":"meituan","published":"2026-08-13","title":"KDD'26 美团学术论文精选及 KDD Cup'26 DataAgents 赛道冠军思路解读","publisher":"美团技术团队","authority":"official","kind":"engineering-article","url":"https://tech.meituan.com/2026/08/13/KDD-2026-meituan-papers.html","topics":["recommendation","generative-recommendation","retrieval","paper-index"]},
+    {"id":"SRC-IND-MT-AGENT-EVAL-2026","company_group":"meituan","published":"2026-08-07","title":"Agent 评测漫谈：由浅入深讲解 Agent 评测","publisher":"美团技术团队","authority":"official","kind":"engineering-article","url":"https://tech.meituan.com/2026/08/07/Agent-Evaluation.html","topics":["agent-evaluation","trajectory-evaluation","methodology"]},
     {"id":"SRC-IND-MT-MTGR-2025","company_group":"meituan","published":"2025-05-19","title":"MTGR：美团外卖生成式推荐 Scaling Law 落地实践","publisher":"美团技术团队","authority":"official","kind":"engineering-article","url":"https://tech.meituan.com/2025/05/19/Meituan-Generative-Recommendation.html","topics":["generative-recommendation","large-ranking-model","training","serving"]},
 
     {"id":"SRC-IND-BD-RANKMIXER-QBIT-2025","company_group":"bytedance","published":"2025-08-01","title":"抖音全新推荐大模型 RankMixer，参数翻 70 倍，推理成本不涨","publisher":"量子位","authority":"secondary","kind":"media-explainer","url":"https://mp.weixin.qq.com/s/RewNlyOw0eYKhAcz__GlKg","topics":["large-ranking-model","rankmixer"]},
