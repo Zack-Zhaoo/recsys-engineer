@@ -54,6 +54,7 @@
 | 粗排蒸馏 | 通用蒸馏 → Rocket Launching → COLD [SRC-ROCKET-2018] | 轻网络与教师联合训练、共享底层参数 |
 | 位置偏差 | 直接用曝光标签 → PAL [SRC-PAL-2019] | 训练时分离位置与相关性，线上只用相关性打分 |
 | 列表组织 | MMR → xQuAD → Seq2Slate → SlateQ [SRC-XQUAD-2013] [SRC-SEQ2SLATE-2018] [SRC-SLATEQ-2019] | 判据从人写到模型学，目标从即时到长期，交互与长期至今二选一 |
+| 训练系统 | DistBelief → Parameter Server → Monolith [SRC-DISTBELIEF-2012] [SRC-PS-2014] [SRC-MONOLITH-2022] | 从证明大网络可切开训练，到参数服务器成为一等架构，再到推荐特化的无冲突动态词表与在线训练 |
 
 关于快手 PPNet：它在工业交流中被广泛提及，但公开可引用的完整表述以 PEPNet 为准，思想源头是语音自适应的 LHUC。用博客或口头介绍支撑“某公司首次/收益多少”的强声明不成立，见 [证据规则](../sources/evidence-policy.md)。
 
