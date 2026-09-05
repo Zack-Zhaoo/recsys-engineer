@@ -69,6 +69,7 @@
     {"id":"SRC-TWIN-2023","year":2023,"title":"TWIN: TWo-stage Interest Network for Lifelong User Behavior Modeling in CTR Prediction at Kuaishou","kind":"paper","url":"https://arxiv.org/abs/2302.02352","topics":["long-sequence","consistency","ranking"]},
 
     {"id":"SRC-P5-2022","year":2022,"title":"Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5)","kind":"paper","url":"https://arxiv.org/abs/2203.13366","topics":["llm-in-recommendation"]},
+    {"id":"SRC-DSI-2022","year":2022,"title":"Transformer Memory as a Differentiable Search Index (DSI)","kind":"paper","url":"https://arxiv.org/abs/2202.06991","topics":["generative-retrieval","model-as-index","information-retrieval"]},
     {"id":"SRC-TIGER-2023","year":2023,"title":"Recommender Systems with Generative Retrieval (TIGER)","kind":"paper","url":"https://arxiv.org/abs/2305.05065","topics":["generative-recommendation","semantic-id"]},
     {"id":"SRC-TALLREC-2023","year":2023,"title":"TALLRec: An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation","kind":"paper","url":"https://arxiv.org/abs/2305.00447","topics":["llm-in-recommendation"]},
     {"id":"SRC-HSTU-2024","year":2024,"title":"Actions Speak Louder than Words: Trillion-Parameter Sequential Transducers for Generative Recommendations","kind":"paper","url":"https://arxiv.org/abs/2402.17152","topics":["large-ranking-model","generative-recommendation"]},
